@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <img
+        src="https://i.pinimg.com/originals/72/8b/00/728b005ff1c0665f4415e4c60b428de5.gif"
+        alt="background-gif"
+        class="background-gif"
+      />
+    </div>
+    <ul class="list">
+      <li class="list-item"><h1>Header</h1></li>
+      <li class="list-item">
+        <ul class="list-item-container">
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+          <li class="list-item-container-item">
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              ad culpa repellat autem repellendus, beatae quia. Obcaecati
+              aliquid ab rem distinctio suscipit, quidem perspiciatis laboriosam
+              dicta hic dolores doloremque accusantium!
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="list-item">
+        <ul class="img-list">
+          <li class="img-list-item">
+            <img
+              src="https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-at-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg"
+              alt="cat"
+              width="320"
+              height="300"
+            />
+          </li>
+          <li class="img-list-item">
+            <img
+              src="https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-at-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg"
+              alt="cat"
+              width="320"
+              height="300"
+            />
+          </li>
+          <li class="img-list-item">
+            <img
+              src="https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-at-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg"
+              alt="cat"
+              width="320"
+              height="300"
+            />
+          </li>
+        </ul>
+      </li>
+      <li class="list-item">
+        <ul class="button-list">
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+          <li class="button-list-item">
+            <button class="button-class" type="button">Meaw</button>
+          </li>
+        </ul>
+      </li>
+      <li class="list-item">5</li>
+      <li class="list-item">6</li>
+    </ul>
+
+    <audio id="meowSound" src="meaw.mp3" controls hidden></audio>
+
+    <script>
+      const meowButton = document.querySelectorAll('.button-class');
+      const meowSound = document.getElementById('meowSound');
+
+      meowButton.forEach(button => {
+        button.addEventListener('click', () => {
+          meowSound.play();
+        });
+      });
+    </script>
+  </body>
+</html>
